@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+	<default>
+		<reference name="head" >
+		  <action method="addItem" ifconfig="flickrfeeds/flickrfeeds/fenable"><type>skin_css</type><name>flickrfeeds/flickrstyle.css</name><params/><if/></action>
+		  
+		  <action method="addItem" ifconfig="flickrfeeds/flickrfeeds/fenable"><type>skin_css</type><name>flickrfeeds/colorbox/colorbox.css</name><params/><if/></action>
+		  
+		  <!--[if IE]><action method="addItem" ifconfig="flickrfeeds/flickrfeeds/fenable"><type>skin_js</type><name>flickrfeeds/html5.js</name><params/><if/></action><![endif]-->
+		  
+		  <action method="addItem" ifconfig="flickrfeeds/flickrfeeds/fenable"><type>skin_js</type><name>flickrfeeds/jquery.min.js</name><params/><if/></action>
+		  
+		  <action method="addItem" ifconfig="flickrfeeds/flickrfeeds/fenable"><type>skin_js</type><name>flickrfeeds/colorbox/jquery.colorbox-min.js</name><params/><if/></action>
+		  
+		  <action method="addItem" ifconfig="flickrfeeds/flickrfeeds/fenable"><type>skin_js</type><name>flickrfeeds/flickrfeed.js</name><params/><if/></action>
+		</reference>
+		<reference name="top.links">
+			<action method="addLink" ifconfig="flickrfeeds/flickrfeeds/fenable">
+				<label>Flickr Feeds</label>
+				<url>flickrfeeds</url>
+				<title>Flickr Feeds</title>
+				<prepare>true</prepare>
+				<position>100</position>
+			</action>
+		</reference>
+	</default>
+	<flickrfeeds_index_index>   
+		<reference name="root">   
+		  <action method="setTemplate"><template>page/1column.phtml</template></action>   
+		</reference>  
+	   
+		<reference name="content">   
+		  <block type="flickrfeeds/index" name="flickrfeeds" template="flickrfeeds/index.phtml"/>  
+		</reference>   
+	</flickrfeeds_index_index>   
+</layout>

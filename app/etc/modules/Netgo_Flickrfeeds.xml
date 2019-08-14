@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Netgo_Flickrfeeds>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Netgo_Flickrfeeds>
+	</modules>
+</config>

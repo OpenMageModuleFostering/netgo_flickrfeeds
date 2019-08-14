@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Netgo_Flickrfeeds</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension helps to display latest feeds of your Flickr page by only giving user id.</summary>
+    <description>This extension allows to display the feeds of your flickr page just by giving Flickr user id. You can also switch the views &#xD;
+&#xD;
+of the feeds between grid view and list view. It will fetch the feeds and show images. when image is hovered a text will be &#xD;
+&#xD;
+found which will be clicked and a pop will come. After pop up opens you can find description.</description>
+    <notes>First Preview Release</notes>
+    <authors><author><name>NetGo</name><user>NetGo</user><email>netattingomails@gmail.com</email></author></authors>
+    <date>2015-09-09</date>
+    <time>18:50:47</time>
+    <contents><target name="magecommunity"><dir name="Netgo"><dir name="Flickrfeeds"><dir name="Block"><file name="Index.php" hash="497c001d7b1cf0cbf3ca3e519b8c7a36"/></dir><dir name="Helper"><file name="Data.php" hash="68ebb4c50e42fd6224c6698018ed423d"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Viewmode.php" hash="76154b13b3d4287221004ad02a2976cf"/></dir></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="8adc0e24234cb16cf9c306d8cfd5b2fe"/></dir><dir name="etc"><file name="adminhtml.xml" hash="5f2d57b73415868e29842e4c7af8d29d"/><file name="config.xml" hash="62e6ed802b3ff027d65a4d6e849215c5"/><file name="system.xml" hash="d9cd247755c55b59702d313d39ece2af"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="flickrfeeds.xml" hash="47f37b3b1c4add63d3185446d06f3110"/></dir><dir name="template"><dir name="flickrfeeds"><file name="index.phtml" hash="2078ead356be8812f9c25f27f1d66a3e"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="flickrfeeds"><dir name="colorbox"><dir name="images"><file name="button_blue_close.png" hash="20a312108a21f2040f2d6d1380a2a957"/><file name="controls.png" hash="26156c32573f430fc4454fb551ac67f2"/><file name="loading.gif" hash="8732a6660b528fadfaeb35bcf568875f"/><file name="slider_arrows.png" hash="319b98542aa3f92c7756638e8ba8e052"/></dir><file name="colorbox.css" hash="cec472ca39588a508459c99378d0673e"/><file name="jquery.colorbox-min.js" hash="564f41abc9409bc749c67916d12fa51d"/></dir><file name="flickrfeed.js" hash="62b747a4e472c0d0a0419bb16647ef11"/><file name="flickrstyle.css" hash="978644f4193e42cf5d9e32e3d40de666"/><file name="html5.js" hash="9dbe54424ec1a039cc8a002c0e52aea7"/><file name="jquery.min.js" hash="8a105bb117c5e58191d1cb6379db3559"/></dir></dir></dir></dir></target><target name="mage"><dir name="."><file name="User_Manual.pdf" hash="5ac44a54084c4873bfcf9297621e0311"/></dir></target><target name="mageetc"><dir name="modules"><file name="Netgo_Flickrfeeds.xml" hash="8443fea2fab2d4e620beab156cd5d31b"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

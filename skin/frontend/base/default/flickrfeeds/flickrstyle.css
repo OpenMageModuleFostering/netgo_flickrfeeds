@@ -1,0 +1,203 @@
+ /**
+ * Flickr Feeds
+ *
+ * @category    Netgo
+ * @package     Netgo_Flickrfeeds
+ * @author      Afroz Alam <afroz92@gmail.com>
+ * @copyright   NetAttingo Technologies (http://www.netattingo.com/)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+/*================FLICKR-FEEDS-11-SEPT-2015-GRID-MODE START======================*/
+
+#flickr_container { 
+    width: 700px; 
+	padding: 50px; 
+	background: #f9f9f9; 
+	margin: 0 auto; 
+	text-align: left; 
+}
+
+#flickr_container .flickr_thumbs li {
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 190px;
+	position:relative;
+	overflow:hidden;
+}
+
+
+#flickr_container::after, #flickr_container::before {
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+
+.flickr_thumbs::after, .flickr_thumbs::before {
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+
+
+#flickr_container .flickr_thumbs li  img {
+    height: 150px;
+	width:100%;
+}
+
+
+#flickr_container .fl-wrap {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#flickr_container .fl-wrap .flickr-title {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    font-family: cursive;
+    margin:0 auto 0;
+    padding: 7px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+#flickr_container .fl-wrap a.more-details {
+    background: darkgreen none repeat scroll 0 0;
+    border-radius: 0 4px;
+    color: #fff;
+    display: none;
+    font-size: 11px;
+    margin: 35% auto 0;
+    padding: 3px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 65px;
+}
+
+#flickr_container .flickr_thumbs li:hover a.more-details {
+    display: block;
+	text-decoration:none;
+}
+
+#flickr_container #flickrbox > li:hover .fl-wrap {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    display: block;
+    margin: 0;
+    padding: 6.9px 0;
+    width: 100%;
+}
+
+
+#flickr_container #flickrbox > li:hover .fl-wrap .flickr-title {
+    margin-top: 54px;
+}
+
+#flickr_container .fl-wrap .flickr-title span {
+    color: #fff;
+    font-family: cursive;
+    text-align: center;
+	font-size:11px;
+}
+
+
+
+
+
+
+
+/*================FLICKR-FEEDS-11-SEPT-2015-GRID-MODE CLOSE======================*/
+
+
+
+
+
+/*================FLICKR-FEEDS-11-SEPT-2015-LIST-MODE START======================*/
+
+
+#flickr_container_list .flickr_thumbs_list li img {
+    float: left;
+}
+
+
+
+#flickr_container_list li::after, #flickr_container_list li::before {
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+#flickr_container_list {
+    margin: 0 auto;
+    width: 670px;
+}
+
+#flickr_container_list .flickr_thumbs_list li {
+    border: 1px solid #d1d1d1;
+    border-radius: 25px 0;
+    margin-bottom: 20px;
+    padding: 20px 18px;
+}
+
+#flickr_container_list .fl-wrap {
+    float: left;
+    margin-left: 20px;
+    width: 55%;
+}
+
+#flickr_container_list .flickr-title span {
+    color: #000;
+    font-family: cursive;
+    font-size: 19px;
+}
+
+#flickr_container_list .fl-wrap a.more-details {
+    background: darkgreen none repeat scroll 0 0;
+    border-radius: 0 4px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    margin-top: 9px;
+    padding: 2px 15px;
+    text-transform: uppercase;
+}
+
+
+#flickr_container_list .flickr_thumbs_list li:hover {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+}
+
+#flickr_container_list .flickr_thumbs_list li:hover img {
+    opacity: 0.8;
+}
+
+#cboxLoadedContent {
+    background: none !important;
+}
+
+#cboxLoadedContent{
+  overflow:inherit !important;	
+}
+
+
+
+#cboxPhoto {
+    border: 2px solid #d9d9d9;
+    width: 100%;
+}
+
+#cboxContent{
+	width:510px !important;
+}
+
+/*================FLICKR-FEEDS-11-SEPT-2015-LIST-MODE CLOSE======================*/
+
+

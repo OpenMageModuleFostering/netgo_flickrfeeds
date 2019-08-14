@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!--
+ /**
+ * Flickr Feeds
+ *
+ * @category    Netgo
+ * @package     Netgo_Flickrfeeds
+ * @author      Afroz Alam <afroz92@gmail.com>
+ * @copyright   NetAttingo Technologies (http://www.netattingo.com/)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+	  <tabs>
+		<netgoflickrfeeds translate="label" module="flickrfeeds">
+            <label>NetGo</label>
+            <sort_order>0</sort_order>
+        </netgoflickrfeeds>
+	  </tabs>
+	  <sections>
+		<flickrfeeds translate="label" module="flickrfeeds">                    
+		<label>Flickr Feeds</label>
+		<tab>netgoflickrfeeds</tab>
+		<frontend_type>text</frontend_type>
+		<sort_order>0</sort_order>
+		<show_in_default>1</show_in_default>
+		<show_in_website>1</show_in_website>
+		<show_in_store>1</show_in_store>            
+					<groups>
+				      <flickrfeeds translate="label"> 
+					  <label>Flickr Feeds</label>
+					  <frontend_type>text</frontend_type>
+					  <sort_order>0</sort_order>
+					  <show_in_default>1</show_in_default>
+					  <show_in_website>1</show_in_website>
+					  <show_in_store>1</show_in_store>
+				       <fields>
+                          <fenable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                          </fenable>
+                          <fuserid translate="label">
+                            <label>User ID</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment><![CDATA[<a href="https://www.flickr.com/services/api/explore/flickr.people.findByUsername" target="_blank">Click here</a>]]> to know your flickr user id</comment>
+                          </fuserid>
+				          <limitimg translate="label">
+                            <label>Limit Flickr Feeds</label>
+							<frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Enter the numeric value to show number of feeds</comment>
+                          </limitimg>
+					   </fields>
+					   	<fields>
+                          <viewmode translate="label">
+                            <label>View Mode</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>Netgo_Flickrfeeds_Model_Adminhtml_System_Config_Source_Viewmode</source_model>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>Select mode to display</comment>
+                          </viewmode>
+					   </fields>
+					   </flickrfeeds>
+					</groups>
+		</flickrfeeds>
+	  </sections>
+</config>
