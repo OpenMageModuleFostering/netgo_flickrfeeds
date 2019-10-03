@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Netgo_Flickrfeeds",
+    "name": "openmage-module-fostering\/netgo_flickrfeeds",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension helps to display latest feeds of your Flickr page by only giving user id.",
     "authors": [
